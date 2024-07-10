@@ -29,8 +29,8 @@ jobs:
         server-id: github # Value of the distributionManagement/repository/id field of the pom.xml
         settings-path: ${{ github.workspace }} # location for the settings.xml file
 
-    - name: Init gradle wrapper
-      run: gradle wrapper  
+    - name: Setup Gradle Wrapper
+      uses: gradle/gradle-build-action@v3
 
     - name: Build with Gradle
       run: ./gradlew build
