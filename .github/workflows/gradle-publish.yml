@@ -30,7 +30,7 @@ jobs:
         settings-path: ${{ github.workspace }} # location for the settings.xml file
 
     - name: Setup Gradle Wrapper
-      uses: gradle/gradle-build-action@v3
+      uses: gradle/actions/setup-gradle@v3
       id: setup-gradle
       with:
         gradle-version: release-candidate
