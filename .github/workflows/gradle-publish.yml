@@ -46,3 +46,4 @@ jobs:
       env:
         GITHUB_ACTOR: ${{ github.actor }}
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        GITHUB_RELEASE_TAG: ${{ github.event.release.tag_name }}
