@@ -30,7 +30,7 @@ publishing {
         create<MavenPublication>("reactive-web-client") {
             groupId = "by.akozel"
             artifactId = "reactive-web-client"
-            version = "0.0.1"
+            version = System.getenv("GITHUB_RELEASE_TAG")
 
             from(components["java"])
         }
