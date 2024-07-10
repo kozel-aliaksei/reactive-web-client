@@ -27,7 +27,11 @@ publishing {
         }
     }
     publications {
-        register<MavenPublication>("by.akozel") {
+        create<MavenPublication>("kozel-aliaksei") {
+            groupId = "by.akozel"
+            artifactId = "reactive-web-client"
+            version = "0.0.1"
+
             from(components["java"])
         }
     }
