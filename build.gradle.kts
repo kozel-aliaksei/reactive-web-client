@@ -19,7 +19,7 @@ publishing {
     repositories {
         maven {
             name = "GitHubPackages1"
-            url = uri("https://maven.pkg.github.com")
+            url = uri("https://maven.pkg.github.com/kozel-aliaksei/")
             credentials {
                 username = System.getenv("GITHUB_ACTOR")
                 password = System.getenv("GITHUB_TOKEN")
@@ -27,7 +27,7 @@ publishing {
         }
     }
     publications {
-        create<MavenPublication>("kozel-aliaksei") {
+        create<MavenPublication>("reactive-web-client") {
             groupId = "by.akozel"
             artifactId = "reactive-web-client"
             version = "0.0.1"
